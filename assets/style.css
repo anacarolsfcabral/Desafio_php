@@ -1,0 +1,27 @@
+body {
+    background-color: #efefef;
+}
+
+
+table a {
+    color: #afafaf;
+    font-weight: 400;
+
+}
+
+.breadCrumbs, .breadCrumbs a {
+    color: #444;
+}
+
+.titulo {
+    color: #ccc;
+}
+
+.edit {
+    color: #61bbca;
+}
+
+.formEdit label{
+ color: #a7a6a6;
+ margin-top: 15px;
+}
