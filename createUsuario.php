@@ -31,7 +31,7 @@
             $cadastrou = file_put_contents('./includes/usuarios.json', $novoUsuariosJson);
 
             if ($cadastrou) {
-                header('Location: login.php');
+                header('Location: index.php');
             } 
         }
     }
@@ -70,7 +70,7 @@
                         <?php foreach ($usuariosArray as $key=>$usuario) { ?>
                         <tr>
                         <th scope="row"><?=$usuario['nome']?></th>
-                        <th><a href="editProduto.php?id=<?= $ID ?>">Editar Usuário</a></th>
+                        <th><a href="editUsuario.php?id=<?= $key ?>">Editar Usuário</a></th>
                         <th><a href="deleteUsuario.php?id=<?= $key ?>"><i class="material-icons align-self-center">clear</i></a></th>
                         </tr>
                         <?php } ?>
@@ -105,16 +105,13 @@
                             Senhas não coincidem.
                         </div>
                     <?php endif;?>
-                    <a href="login.php">Já sou cadastrado, fazer login</a>
+                    <a href="index.php">Já sou cadastrado, fazer login</a>
                 
                     <button type="submit" class="btn btn-primary mt-4 float-right">Cadastrar</button>
                 </form>
             </div>
 
-            <div class="col-6">
-            
-
-            </div>
+        
         </div>
     </main>
 </body>

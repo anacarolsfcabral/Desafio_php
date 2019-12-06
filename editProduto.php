@@ -4,7 +4,7 @@
     include 'includes/validacoes.php';
 
     if(empty($_SESSION['usuario'])) {
-        header ('Location: login.php');
+        header ('Location: index.php');
     }
     
 

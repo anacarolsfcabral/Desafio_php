@@ -3,7 +3,7 @@
     session_start(); 
 
     if(empty($_SESSION['usuario'])) {
-        header ('Location: login.php');
+        header ('Location: index.php');
     }
 
     $jsonProdutos = file_get_contents('includes/produtos.json');
